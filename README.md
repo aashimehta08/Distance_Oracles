@@ -1,4 +1,4 @@
-# PART 2: USER GUIDE
+
 # Experimental Evaluation of Optimal Distance Oracles for Planar Graphs
 Welcome to our project on evaluating and improving the distance oracle developed by Das, Kipouridis, Gutenberg, and Wulff-Nilsen for planar graphs. In this README guide, we will provide you with all the necessary information to understand and use our code and resources effectively.
 Resources
