@@ -16,8 +16,8 @@ Our project involves evaluating the distance oracle developed by Das, Kipouridis
 1. Preprocessing Procedure: We preprocess the graph using a divide-and-conquer algorithm. The graph is divided into sub-graphs, and the shortest path trees are formed from the edges of the end points of each subgraph. The intersecting area is contracted since all the shortest path trees from the subgraph must contain the contracted area. Recursive calls on the subproblems result in a graph with only contracted nodes.
 2. Query Procedure: Once the graph is processed, a query finds the distance to a contracted node and sums up the distance when the desired node is found. The contraction of nodes is done by updating the weight of outgoing edges and removing incoming edges of the contracted node.
 3. Space and Runtime Analysis: We analyze the space and runtime complexity of the algorithm. The space required by all subproblems is at most 12n - 24, where n is the number of vertices. The total data structure size becomes O(n log h), and the total construction time is O(S(n) log h), where S(n) is equivalent to O(nlog(n)).
-Future Work
+# Future Work
 Experimental Evaluation: The algorithm should be implemented using Python and tested on extensive road networks or planar graphs. Compare the practical results against the theoretical runtimes to assess the algorithm's effectiveness.
-Code
+# Code
 We provide you with the following code and resources to help you get started:
 Codebase: The codebase below contains the implementation of the distance oracle algorithm. We use list and priority queue data structures. 
