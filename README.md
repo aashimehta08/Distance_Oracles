@@ -8,8 +8,11 @@ To understand the context of our project, it is recommended to familiarize yours
 https://dl.acm.org/doi/pdf/10.5555/1070432.1070454
 3. Das, Kipouridis, Gutenberg, and Wulff-Nilsen's Distance Oracle: This alternative distance oracle offers comparable performance to Klein's approach but is easier to maintain and implement. Refer to their paper for a detailed description of their preprocessing and query procedures.
 https://epubs.siam.org/doi/epdf/10.1137/1.9781611977066.1
-Evaluation
+
+
+# Evaluation
 Our project involves evaluating the distance oracle developed by Das, Kipouridis, Gutenberg, and Wulff-Nilsen. The main components of our evaluation include:
+
 1. Preprocessing Procedure: We preprocess the graph using a divide-and-conquer algorithm. The graph is divided into sub-graphs, and the shortest path trees are formed from the edges of the end points of each subgraph. The intersecting area is contracted since all the shortest path trees from the subgraph must contain the contracted area. Recursive calls on the subproblems result in a graph with only contracted nodes.
 2. Query Procedure: Once the graph is processed, a query finds the distance to a contracted node and sums up the distance when the desired node is found. The contraction of nodes is done by updating the weight of outgoing edges and removing incoming edges of the contracted node.
 3. Space and Runtime Analysis: We analyze the space and runtime complexity of the algorithm. The space required by all subproblems is at most 12n - 24, where n is the number of vertices. The total data structure size becomes O(n log h), and the total construction time is O(S(n) log h), where S(n) is equivalent to O(nlog(n)).
