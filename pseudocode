@@ -1,0 +1,65 @@
+Graph representation : edge list
+array of nodes = [[(1,dist),(2,dist)],...]
+, size = number of nodes
+g = graph
+gSib = graph with opposite direction
+interval = list containing vertices of infinite face
+
+//Intersecting Function:
+flag = [[0,0],[0,1],...]
+// Create the shortest path tree:
+pq = PriorityQueue()
+distanceList = [float('inf')] * self.numNode
+distanceList[node] = 0
+REedgeList = [[],[(1),..],[(2),...],...]
+
+pq.put((0, node))
+vistedList = [False] * self.numNode
+while not pq.empty():
+    curNode = pq.get()[1]
+    if(vistedList[curNode]):
+        continue
+    vistedList[curNode] = True
+
+    for neighbor in range(len(self.graph[curNode])):
+    		flag[curNode][neighbor]++
+        curDistance = neighbor.get_distance()
+        if(not vistedList[neighbor.get_id()] and distanceList[curNode] + curDistance < distanceList[neighbor.get_id()] ):
+            distanceList[neighbor.get_id()] = distanceList[curNode] + curDistance
+            pq.put((distanceList[neighbor.get_id()],neighbor.get_id()))
+      	if(flag[curNode][neighbor] == 2){
+        	edgeList.push(self.graph[curNode][neighbor]);
+        }
+
+return distanceList
+
+//Get the trees:
+parent = [for i in range(len(edgeList))]
+
+for each e in range(len(edgeList))->
+	find
+  union
+//find
+find(int parent[], int i)
+{
+    if (parent[i] == i)
+        return i;
+    return find(parent, parent[i]);
+}
+//union
+	
+}
+//union
+array_of_roots= set(parents)
+
+
+// Contraction:
+for each node:
+store(weight) // use distanceList above
+if node not root and :
+	for incoming REedgeList[node]:
+		if not belong to the list of node of tree:
+    	graph[incoming] -> node -> infinity
+      
+if not in the tree:
+	graph[node] -> every neighbor in tree -> dist + weight:
