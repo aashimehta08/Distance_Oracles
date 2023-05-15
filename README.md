@@ -9,6 +9,7 @@ https://dl.acm.org/doi/pdf/10.5555/1070432.1070454
 3. Das, Kipouridis, Gutenberg, and Wulff-Nilsen's Distance Oracle: This alternative distance oracle offers comparable performance to Klein's approach but is easier to maintain and implement. Refer to their paper for a detailed description of their preprocessing and query procedures.
 https://epubs.siam.org/doi/epdf/10.1137/1.9781611977066.1
 
+The demonstrates the usage of the Vertex and Dart classes by creating a simple graph. It initializes five vertices (a, b, c, d, e) and creates various darts to represent edges between them. Each vertex is assigned an adjacency list consisting of darts.
 
 # Evaluation
 Our project involves evaluating the distance oracle developed by Das, Kipouridis, Gutenberg, and Wulff-Nilsen. The main components of our evaluation include:
